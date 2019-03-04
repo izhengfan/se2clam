@@ -40,7 +40,7 @@ Build this project as a ROS package
    rosrun se2clam test_vn PATH_TO_DatasetRoom PATH_TO_ORBvoc.bin
    ```
 
-   ![result in rviz](https://images.gitee.com/uploads/images/2019/0304/231018_8fa791a2_874043.png)
+   ![result in rviz](https://images.gitee.com/uploads/images/2019/0304/231649_cdb48a5e_874043.png)
    
    
 ### Related Project
