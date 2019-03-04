@@ -2,7 +2,7 @@ se2clam
 ---
 SE(2)-Constrained Localization and Mapping by Fusing Odometry and Vision
 
-### Related Publication:
+### Related Publication
 
 - Fan Zheng, Hengbo Tang, Yun-Hui Liu. "Odometry-Vision-Based Ground Vehicle Motion Estimation With SE(2)-Constrained SE(3) Poses". _IEEE Transactions on Cybernetics_, 2018
 
@@ -34,7 +34,7 @@ Build this project as a ROS package
    rosrun rviz rviz -d rviz.rviz
    ```
 
-4. Run se2lam:
+4. Run se2clam:
    
    ```
    rosrun se2clam test_vn PATH_TO_DatasetRoom PATH_TO_ORBvoc.bin
