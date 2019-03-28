@@ -6,6 +6,16 @@ SE(2)-Constrained Localization and Mapping by Fusing Odometry and Vision
 
 - Fan Zheng, Hengbo Tang, Yun-Hui Liu. "Odometry-Vision-Based Ground Vehicle Motion Estimation With SE(2)-Constrained SE(3) Poses". _IEEE Transactions on Cybernetics_, 2018
 
+  To cite it in bib:
+  ```
+  @article{fzheng2018tcyb,
+    author  = {Fan Zheng and Hengbo Tang and Yun-Hui Liu},
+    journal = {IEEE Trans. Cybernetics},
+    title   = "{Odometry-Vision-Based Ground Vehicle Motion Estimation With SE(2)-Constrained SE(3) Poses}",
+    year    = {2018},
+  }
+  ```
+
 
 ### Dependencies
 
