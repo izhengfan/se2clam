@@ -2,6 +2,8 @@ se2clam
 ---
 SE(2)-Constrained Localization and Mapping by Fusing Odometry and Vision
 
+[![](../../workflows/Build/badge.svg)](../../actions?query=workflow%3A"Build")
+
 ### Related Publication
 
 - Fan Zheng, Hengbo Tang, Yun-Hui Liu. "Odometry-Vision-Based Ground Vehicle Motion Estimation With SE(2)-Constrained SE(3) Poses". _IEEE Transactions on Cybernetics_, vol. 49, no. 7, 2019
