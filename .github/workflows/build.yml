@@ -1,0 +1,35 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: install required packages
+      run: |
+        sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+        sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+        sudo apt-get update
+        sudo apt-get install -y libopencv-dev libeigen3-dev libsuitesparse-dev ros-melodic-desktop python-rosdep
+        echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+        source ~/.bashrc
+        sudo rosdep init
+        rosdep update
+        
+    - name: build
+      run: |
+        source /opt/ros/melodic/setup.bash
+        mkdir build
+        cd build
+        git clone https://gitee.com/izhengfan/g2o_2016_installed.git
+        sudo mv g2o_2016_installed/include/g2o /usr/local/include/g2o
+        sudo mv g2o_2016_installed/lib/*.so /usr/local/lib/
+        cmake .. 
+        make
